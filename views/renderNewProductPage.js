@@ -1,5 +1,20 @@
-/* 🏗 Structo the Builder */
-/* Funkcja generująca stronę HTML z najnowszym produktem */
-const renderNewProductPage = () => {};
-
-module.exports = renderNewProductPage;
+const renderNewProductPage = (productName) => {
+    return `
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <title>New Product</title>
+      </head>
+      <body>
+        <h1>Newest Product</h1>
+        <p>${productName}</p>
+        <br>
+        <a href="/">Return to Home</a>
+      </body>
+      </html>
+    `;
+  };
+  
+  module.exports = renderNewProductPage;
+  
